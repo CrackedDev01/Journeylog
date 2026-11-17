@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-// Create axios instance with base URL from environment variable
+// Use the hosted API unless an environment-specific backend is configured.
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api/v1',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://journeylog-backend.vercel.app/api/v1',
 })
 
 // Request interceptor to attach auth token
