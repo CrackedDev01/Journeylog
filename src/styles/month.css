@@ -1,0 +1,657 @@
+/* ==========================================================================
+   Month Page & Monthly Goals Styling
+   ========================================================================== */
+
+.month-page {
+  padding-bottom: 3rem;
+}
+
+.bg-sage-light {
+  background-color: #e9f1e9 !important;
+}
+
+.bg-gold-light {
+  background-color: #f5efdf !important;
+}
+
+.text-gold-dark {
+  color: #895f20 !important;
+}
+
+.fill-warning {
+  fill: #bd9146;
+}
+
+/* Header */
+.month-header-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.month-heading-title {
+  font-family: var(--font-family-display, Georgia, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text, #27372c);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.month-heading-subtitle {
+  color: var(--color-text-muted, #7b8174);
+  font-size: 0.95rem;
+  max-width: 600px;
+}
+
+.current-month-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background-color: #edf1e7;
+  color: #47684d;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.month-nav-group .btn {
+  padding: 0.35rem 0.65rem;
+}
+
+/* Summary Metrics */
+.monthly-summary-container {
+  margin-bottom: 1.75rem;
+}
+
+.badge-pill-soft {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: rgba(39, 55, 44, 0.06);
+  color: var(--color-text-muted, #7b8174);
+}
+
+.metric-sage {
+  background: #fffdfa;
+  border: 1px solid #e2ebd8;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.metric-gold {
+  background: #fffdfa;
+  border: 1px solid #faeed0;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.metric-blue {
+  background: #fffdfa;
+  border: 1px solid #dce8f2;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.metric-terracotta {
+  background: #fffdfa;
+  border: 1px solid #f6ded8;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+/* Goals Grid & Cards */
+.monthly-goal-card {
+  background: var(--color-surface, #fffdf8);
+  border: 1px solid var(--color-border, #e7e1d4);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(62, 70, 49, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.monthly-goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(62, 70, 49, 0.08);
+}
+
+.goal-completed-card {
+  border-left: 4px solid var(--color-success, #6c8b6b);
+  background: linear-gradient(180deg, #fafdf9 0%, #fffdf8 100%);
+}
+
+.goal-card-title {
+  font-family: var(--font-family-display, Georgia, serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text, #27372c);
+  line-height: 1.35;
+}
+
+.goal-category-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: #f0ede4;
+  color: #555d50;
+}
+
+.goal-why-box {
+  background: #fbf9f4;
+  border-left: 3px solid #d4c5a9;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #4a5449;
+}
+
+.goal-why-label {
+  font-weight: 600;
+  font-style: normal;
+  margin-right: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.goal-description-text {
+  font-size: 0.85rem;
+  color: #636b5d;
+  background: #f8f6f0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Badges */
+.badge-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.badge-priority-critical {
+  background: #fce8e6;
+  color: #c53929;
+}
+
+.badge-priority-high {
+  background: #fef0db;
+  color: #b06000;
+}
+
+.badge-priority-medium {
+  background: #edf1e7;
+  color: #47684d;
+}
+
+.badge-priority-low {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+.badge-status-neutral {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+.badge-status-active {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.badge-status-success {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.badge-status-warning {
+  background: #fef7e0;
+  color: #b06000;
+}
+
+.badge-status-muted {
+  background: #e8eaed;
+  color: #80868b;
+}
+
+/* Milestones */
+.milestones-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted, #7b8174);
+}
+
+.milestone-item {
+  background: #faf8f3;
+  margin-bottom: 0.25rem;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.milestone-item:hover {
+  background: #f5f2eb;
+  border-color: #e5ded2;
+}
+
+.milestone-completed {
+  opacity: 0.75;
+}
+
+.milestone-title {
+  font-size: 0.85rem;
+  color: var(--color-text, #27372c);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Status Filter Tabs */
+.status-filter-tabs .btn-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  color: var(--color-text-muted, #7b8174);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.status-filter-tabs .btn-tab:hover {
+  background: #f2eee5;
+  color: var(--color-text, #27372c);
+}
+
+.status-filter-tabs .btn-tab.active {
+  background: var(--color-primary, #47684d);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.status-filter-tabs .btn-tab .tab-count {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.status-filter-tabs .btn-tab.active .tab-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Modals */
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 40, 32, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 1rem;
+}
+
+.modal-card-custom {
+  background: #fffdfa;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(39, 55, 44, 0.2);
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+.modal-card-lg {
+  max-width: 640px;
+}
+
+.modal-card-xl {
+  max-width: 780px;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header-custom {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #ebe5d8;
+  background: #fbf9f4;
+}
+
+.modal-icon-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #edf1e7;
+  color: #47684d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title-custom {
+  font-family: var(--font-family-display, Georgia, serif);
+  font-weight: 600;
+  color: var(--color-text, #27372c);
+}
+
+.modal-body-custom {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.max-h-modal {
+  max-height: 75vh;
+}
+
+.modal-footer-custom {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ebe5d8;
+  background: #fbf9f4;
+}
+
+.btn-close-custom {
+  background: transparent;
+  border: none;
+  color: #7b8174;
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+.btn-close-custom:hover {
+  background: #e8e3d8;
+  color: #27372c;
+}
+
+.dropdown-backdrop-transparent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+/* Review & Reflection helpers */
+.bg-sage-light {
+  background-color: #f1f6ef;
+}
+
+.bg-gold-light {
+  background-color: #faf5e6;
+}
+
+.text-gold-dark {
+  color: #947118;
+}
+
+.fill-warning {
+  fill: #cda849;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.month-page {
+  color: var(--color-text);
+}
+
+.month-heading-title,
+.goal-card-title,
+.modal-title-custom {
+  color: var(--color-ink);
+}
+
+.month-heading-subtitle {
+  color: #77817b;
+}
+
+.current-month-badge {
+  background: #eaf1eb;
+  color: #285d4e;
+}
+
+.month-nav-group .btn {
+  border-radius: 8px;
+}
+
+.metric-sage,
+.metric-gold,
+.metric-blue,
+.metric-terracotta,
+.monthly-goal-card {
+  background: #fffefa;
+  border-color: #e5e7df;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px rgba(27, 48, 40, 0.045);
+}
+
+.metric-sage {
+  border-top: 2px solid #528367;
+}
+
+.metric-gold {
+  border-top: 2px solid #bd9146;
+}
+
+.metric-blue {
+  border-top: 2px solid #5b8580;
+}
+
+.metric-terracotta {
+  border-top: 2px solid #ad6654;
+}
+
+.monthly-goal-card {
+  padding: 1.35rem;
+  transition: transform 170ms ease, box-shadow 170ms ease;
+}
+
+.monthly-goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 11px 28px rgba(27, 48, 40, 0.08);
+}
+
+.goal-completed-card {
+  border-left-color: #4d8066;
+  background: linear-gradient(180deg, #f7fbf7, #fffefa 72%);
+}
+
+.goal-category-tag {
+  background: #edf1e9;
+  color: #536454;
+  border-radius: 999px;
+}
+
+.badge-priority-critical {
+  background: #f7e6e1;
+  color: #963e34;
+}
+
+.badge-priority-high {
+  background: #f5ecd9;
+  color: #8a5f20;
+}
+
+.badge-priority-medium {
+  background: #e6efe8;
+  color: #28604b;
+}
+
+.badge-priority-low,
+.badge-status-neutral,
+.badge-status-muted {
+  background: #eceee9;
+  color: #59665d;
+}
+
+.badge-status-active {
+  background: #e2eee7;
+  color: #205f49;
+}
+
+.badge-status-success {
+  background: #dfeee2;
+  color: #246242;
+}
+
+.badge-status-warning {
+  background: #f5ecd8;
+  color: #8a5e1e;
+}
+
+.badge-pill {
+  border-radius: 999px;
+}
+
+.goal-target-text {
+  color: #617066;
+}
+
+.goal-progress-bar {
+  overflow: hidden;
+  background: #e9ede7;
+  border-radius: 999px;
+}
+
+.goal-progress-bar .progress-bar {
+  border-radius: inherit;
+}
+
+.goals-section-panel > .border-bottom,
+.review-content-card .border-bottom,
+.monthly-goal-card .border-top {
+  border-color: #e6e9e2 !important;
+}
+
+.goal-why-box {
+  background: #f7f5ee;
+  border-left-color: #baa16c;
+}
+
+.goal-description-text {
+  color: #606f66;
+  background: #f4f5f0;
+  border-radius: 8px;
+}
+
+.status-filter-tabs .btn-tab {
+  border-radius: 999px;
+}
+
+.status-filter-tabs .btn-tab.active {
+  background: var(--color-ink);
+}
+
+.milestone-item {
+  background: #f7f7f2;
+  border-radius: 8px;
+}
+
+.milestone-item:hover {
+  background: #f0f2ec;
+  border-color: #e4e8df;
+}
+
+.modal-backdrop-custom {
+  background: rgba(17, 35, 30, 0.52);
+  backdrop-filter: blur(5px);
+}
+
+.modal-card-custom {
+  background: #fffefa;
+  border: 1px solid rgba(229, 231, 223, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(19, 39, 33, 0.24);
+}
+
+.modal-header-custom,
+.modal-footer-custom {
+  background: #faf9f4;
+  border-color: #e8e9e2;
+}
+
+.modal-icon-badge {
+  color: #2f6958;
+  background: #eaf1eb;
+  border-radius: 10px;
+}
+
+.btn-close-custom:hover {
+  background: #eceee8;
+  color: var(--color-ink);
+}
+
+/* Shared workspace design tokens */
+.month-page { max-width:1184px; padding:0; }
+.month-heading-title { font-family:var(--font-family-base); font-size:clamp(1.75rem,3vw,2.25rem); font-weight:650; }
+.month-heading-subtitle { font-size:.875rem; color:var(--color-text-muted); }
+.month-header-wrapper { margin-bottom:2rem; }
+.month-header-wrapper .section-eyebrow { font-size:.625rem; }
+.month-header-wrapper .d-flex.align-items-center.gap-2.mb-1 { flex-wrap:wrap; }
+.monthly-summary-container .metric-sage,.monthly-summary-container .metric-gold,.monthly-summary-container .metric-blue,.monthly-summary-container .metric-terracotta,.monthly-goal-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); box-shadow:none; }
+.monthly-summary-container .metric-value { font-family:var(--font-family-base); }
+.monthly-goal-card:hover { transform:none; box-shadow:var(--shadow-sm); border-color:var(--color-primary-accent); }
+.goal-completed-card { border-left:3px solid var(--color-success); background:var(--color-surface); }
+.goal-card-title { font-family:var(--font-family-base); font-size:1rem; }
+.goal-category-tag { border-radius:var(--border-radius-sm); background:var(--color-sage-pale); color:var(--color-primary); }
+.goal-why-box { background:var(--color-surface-soft); border-left-color:var(--color-primary-accent); color:var(--color-text-muted); font-style:normal; }
+.goal-description-text,.milestone-item { background:var(--color-surface-soft); color:var(--color-text-muted); }
+.goal-target-text { color:var(--color-text-muted); }
+.status-filter-tabs .btn-tab { min-height:40px; border-radius:var(--border-radius-sm); color:var(--color-text-muted); }
+.status-filter-tabs .btn-tab.active { color:var(--color-on-dark); background:var(--color-primary); }
+.goals-empty-state { display:flex; flex-direction:column; align-items:center; }
+.goals-empty-state h3 { font-size:1rem; }
+.empty-icon-circle { width:48px; height:48px; background:var(--color-sage-pale); color:var(--color-primary); border-radius:var(--border-radius-lg); }
+.modal-card-custom { background:var(--color-surface); border:0; }
+.modal-header-custom,.modal-footer-custom { background:var(--color-surface-soft); border-color:var(--color-border); }
+.modal-title-custom { font-family:var(--font-family-base); font-size:1.125rem; }
+.modal-icon-badge { background:var(--color-sage-pale); color:var(--color-primary); border-radius:var(--border-radius-md); }
+.btn-close-custom { display:grid; width:40px; height:40px; flex-shrink:0; place-items:center; padding:.5rem; color:var(--color-text-muted); }
+.review-section-title { font-size:1rem; }
+@media(max-width:575.98px) { .month-nav-group .btn { min-width:40px; } .monthly-goal-card { padding:1rem; } .month-heading-title { font-size:1.75rem; } .month-header-wrapper .section-eyebrow { letter-spacing:.05em; } }
+.monthly-summary-container .metric-card { display:block; padding:1.25rem; }
+.monthly-summary-container .metric-card > .d-flex { gap:.5rem; }
+.monthly-summary-container .badge-pill-soft { font-size:.625rem; white-space:nowrap; }
+.month-page .dashboard-panel h2 { font-size:1.125rem; }
+.dashboard-page .metric-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); box-shadow:none; }
+.modal-body-custom .d-flex.gap-2 > .btn { display:inline-flex; align-items:center; justify-content:center; gap:.375rem; white-space:nowrap; }
